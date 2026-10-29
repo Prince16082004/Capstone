@@ -1,0 +1,330 @@
+{
+  "_meta": {
+    "script": "eval/part5_shap_analysis.py",
+    "library_versions": {
+      "python": "3.13.7",
+      "sklearn": "1.5.2",
+      "shap": "0.46.0",
+      "numpy": "2.1.3"
+    }
+  },
+  "top3_per_class": {
+    "apple": [
+      {
+        "feature": "P",
+        "mean_abs_shap": 0.032739
+      },
+      {
+        "feature": "K",
+        "mean_abs_shap": 0.030004
+      },
+      {
+        "feature": "humidity",
+        "mean_abs_shap": 0.025551
+      }
+    ],
+    "banana": [
+      {
+        "feature": "P",
+        "mean_abs_shap": 0.039862
+      },
+      {
+        "feature": "N",
+        "mean_abs_shap": 0.037719
+      },
+      {
+        "feature": "K",
+        "mean_abs_shap": 0.026434
+      }
+    ],
+    "blackgram": [
+      {
+        "feature": "rainfall",
+        "mean_abs_shap": 0.028427
+      },
+      {
+        "feature": "humidity",
+        "mean_abs_shap": 0.02829
+      },
+      {
+        "feature": "P",
+        "mean_abs_shap": 0.018612
+      }
+    ],
+    "chickpea": [
+      {
+        "feature": "humidity",
+        "mean_abs_shap": 0.047387
+      },
+      {
+        "feature": "K",
+        "mean_abs_shap": 0.036619
+      },
+      {
+        "feature": "P",
+        "mean_abs_shap": 0.010474
+      }
+    ],
+    "coconut": [
+      {
+        "feature": "rainfall",
+        "mean_abs_shap": 0.030344
+      },
+      {
+        "feature": "humidity",
+        "mean_abs_shap": 0.028831
+      },
+      {
+        "feature": "P",
+        "mean_abs_shap": 0.02688
+      }
+    ],
+    "coffee": [
+      {
+        "feature": "N",
+        "mean_abs_shap": 0.044872
+      },
+      {
+        "feature": "humidity",
+        "mean_abs_shap": 0.04034
+      },
+      {
+        "feature": "rainfall",
+        "mean_abs_shap": 0.029647
+      }
+    ],
+    "cotton": [
+      {
+        "feature": "N",
+        "mean_abs_shap": 0.042227
+      },
+      {
+        "feature": "K",
+        "mean_abs_shap": 0.036907
+      },
+      {
+        "feature": "humidity",
+        "mean_abs_shap": 0.028079
+      }
+    ],
+    "grapes": [
+      {
+        "feature": "P",
+        "mean_abs_shap": 0.036744
+      },
+      {
+        "feature": "K",
+        "mean_abs_shap": 0.033558
+      },
+      {
+        "feature": "humidity",
+        "mean_abs_shap": 0.023801
+      }
+    ],
+    "jute": [
+      {
+        "feature": "K",
+        "mean_abs_shap": 0.027329
+      },
+      {
+        "feature": "rainfall",
+        "mean_abs_shap": 0.026894
+      },
+      {
+        "feature": "N",
+        "mean_abs_shap": 0.026124
+      }
+    ],
+    "kidneybeans": [
+      {
+        "feature": "humidity",
+        "mean_abs_shap": 0.06464
+      },
+      {
+        "feature": "K",
+        "mean_abs_shap": 0.021077
+      },
+      {
+        "feature": "N",
+        "mean_abs_shap": 0.01374
+      }
+    ],
+    "lentil": [
+      {
+        "feature": "rainfall",
+        "mean_abs_shap": 0.046719
+      },
+      {
+        "feature": "humidity",
+        "mean_abs_shap": 0.028575
+      },
+      {
+        "feature": "P",
+        "mean_abs_shap": 0.021442
+      }
+    ],
+    "maize": [
+      {
+        "feature": "N",
+        "mean_abs_shap": 0.055357
+      },
+      {
+        "feature": "K",
+        "mean_abs_shap": 0.033368
+      },
+      {
+        "feature": "humidity",
+        "mean_abs_shap": 0.032036
+      }
+    ],
+    "mango": [
+      {
+        "feature": "humidity",
+        "mean_abs_shap": 0.03913
+      },
+      {
+        "feature": "P",
+        "mean_abs_shap": 0.028648
+      },
+      {
+        "feature": "N",
+        "mean_abs_shap": 0.027906
+      }
+    ],
+    "mothbeans": [
+      {
+        "feature": "humidity",
+        "mean_abs_shap": 0.039575
+      },
+      {
+        "feature": "rainfall",
+        "mean_abs_shap": 0.034036
+      },
+      {
+        "feature": "P",
+        "mean_abs_shap": 0.027987
+      }
+    ],
+    "mungbean": [
+      {
+        "feature": "humidity",
+        "mean_abs_shap": 0.047466
+      },
+      {
+        "feature": "rainfall",
+        "mean_abs_shap": 0.035819
+      },
+      {
+        "feature": "K",
+        "mean_abs_shap": 0.026013
+      }
+    ],
+    "muskmelon": [
+      {
+        "feature": "rainfall",
+        "mean_abs_shap": 0.048587
+      },
+      {
+        "feature": "N",
+        "mean_abs_shap": 0.019816
+      },
+      {
+        "feature": "humidity",
+        "mean_abs_shap": 0.01784
+      }
+    ],
+    "orange": [
+      {
+        "feature": "K",
+        "mean_abs_shap": 0.049275
+      },
+      {
+        "feature": "humidity",
+        "mean_abs_shap": 0.030306
+      },
+      {
+        "feature": "P",
+        "mean_abs_shap": 0.028121
+      }
+    ],
+    "papaya": [
+      {
+        "feature": "humidity",
+        "mean_abs_shap": 0.046827
+      },
+      {
+        "feature": "K",
+        "mean_abs_shap": 0.042378
+      },
+      {
+        "feature": "P",
+        "mean_abs_shap": 0.036571
+      }
+    ],
+    "pigeonpeas": [
+      {
+        "feature": "rainfall",
+        "mean_abs_shap": 0.046543
+      },
+      {
+        "feature": "humidity",
+        "mean_abs_shap": 0.041709
+      },
+      {
+        "feature": "N",
+        "mean_abs_shap": 0.032437
+      }
+    ],
+    "pomegranate": [
+      {
+        "feature": "P",
+        "mean_abs_shap": 0.038483
+      },
+      {
+        "feature": "K",
+        "mean_abs_shap": 0.032598
+      },
+      {
+        "feature": "N",
+        "mean_abs_shap": 0.031111
+      }
+    ],
+    "rice": [
+      {
+        "feature": "rainfall",
+        "mean_abs_shap": 0.032509
+      },
+      {
+        "feature": "N",
+        "mean_abs_shap": 0.024991
+      },
+      {
+        "feature": "K",
+        "mean_abs_shap": 0.020418
+      }
+    ],
+    "watermelon": [
+      {
+        "feature": "rainfall",
+        "mean_abs_shap": 0.037904
+      },
+      {
+        "feature": "P",
+        "mean_abs_shap": 0.033857
+      },
+      {
+        "feature": "N",
+        "mean_abs_shap": 0.033527
+      }
+    ]
+  },
+  "global_mean_abs_shap": {
+    "N": 0.025913,
+    "P": 0.02432,
+    "K": 0.026677,
+    "temperature": 0.009911,
+    "humidity": 0.032082,
+    "ph": 0.005412,
+    "rainfall": 0.025786
+  }
+}

@@ -1,0 +1,226 @@
+[
+    {
+        "scheme_id": "SCH001",
+        "scheme_name": "Pradhan Mantri Kisan Samman Nidhi",
+        "short_code": "PM-KISAN",
+        "eligible_categories": [ "marginal", "small", "general" ],
+        "additional_priority_groups": [],
+        "all_crops_eligible": true,
+        "applicable_crops": [],
+        "benefit_type": "direct_income",
+        "annual_benefit_inr": 6000,
+        "financial_assistance_inr": null,
+        "total_assistance_inr_per_hectare": null,
+        "farmer_premium_percent": null,
+        "subsidy_slabs": null,
+        "key_benefit_description": "Rs. 6,000/year paid in 3 installments of Rs. 2,000 every four months, direct to bank account. Open to all landholding farmers since the June 2019 amendment removed the original 2-hectare cap.",
+        "required_documents": [
+            "Aadhaar Card",
+            "Land ownership records as per state revenue register",
+            "Aadhaar-linked bank account details",
+            "Passport-size photograph"
+        ],
+        "exclusion_tags": [
+            "institutional_landholder",
+            "constitutional_post_holder",
+            "current_or_former_minister_mp_mla_mayor",
+            "income_tax_payer",
+            "high_pension_holder",
+            "government_employee_class_1_2",
+            "registered_professional_doctor_engineer_lawyer_ca"
+        ],
+        "official_link": "https://pmkisan.gov.in"
+    },
+    {
+        "scheme_id": "SCH002",
+        "scheme_name": "Pradhan Mantri Fasal Bima Yojana",
+        "short_code": "PMFBY",
+        "eligible_categories": [ "marginal", "small", "general" ],
+        "additional_priority_groups": [],
+        "all_crops_eligible": false,
+        "applicable_crops": [
+            "rice",
+            "wheat",
+            "maize",
+            "cotton",
+            "jute",
+            "sugarcane",
+            "chickpea",
+            "kidneybeans",
+            "pigeonpeas",
+            "mothbeans",
+            "mungbean",
+            "blackgram",
+            "lentil",
+            "pomegranate",
+            "banana",
+            "mango",
+            "grapes",
+            "watermelon",
+            "muskmelon",
+            "apple",
+            "orange",
+            "papaya",
+            "coconut"
+        ],
+        "benefit_type": "insurance",
+        "annual_benefit_inr": null,
+        "financial_assistance_inr": null,
+        "total_assistance_inr_per_hectare": null,
+        "farmer_premium_percent": {
+            "kharif": 2.0,
+            "rabi": 1.5,
+            "commercial": 5.0
+        },
+        "subsidy_slabs": null,
+        "key_benefit_description": "Subsidized crop insurance against yield loss from natural calamities, pests, and disease. Farmer pays only the capped premium percentage; remainder subsidized by Centre and State. Covers notified food crops, oilseeds, and commercial/horticultural crops.",
+        "required_documents": [
+            "Aadhaar Card",
+            "Land ownership record OR valid tenancy/sharecropping agreement",
+            "Bank account details",
+            "Sowing certificate (non-loanee farmers)",
+            "Recent passport-size photograph"
+        ],
+        "exclusion_tags": [
+            "non_notified_crop_or_area",
+            "war_or_nuclear_damage",
+            "riot_or_malicious_damage",
+            "theft",
+            "farmer_negligence",
+            "late_claim_reporting"
+        ],
+        "official_link": "https://pmfby.gov.in"
+    },
+    {
+        "scheme_id": "SCH003",
+        "scheme_name": "Soil Health Card Scheme",
+        "short_code": "SHC",
+        "eligible_categories": [ "marginal", "small", "general" ],
+        "additional_priority_groups": [],
+        "all_crops_eligible": true,
+        "applicable_crops": [],
+        "benefit_type": "service",
+        "annual_benefit_inr": null,
+        "financial_assistance_inr": null,
+        "total_assistance_inr_per_hectare": null,
+        "farmer_premium_percent": null,
+        "subsidy_slabs": null,
+        "key_benefit_description": "Free soil sample collection and testing every 2 years, delivered as a printed/digital card reporting 12 parameters (N, P, K, pH, micronutrients, organic carbon) with crop-wise fertilizer recommendations. No fee at any stage.",
+        "required_documents": [
+            "Aadhaar Card",
+            "Land records (Khasra/Khatauni)",
+            "Aadhaar-linked mobile number for OTP verification"
+        ],
+        "exclusion_tags": [],
+        "official_link": "https://soilhealth.dac.gov.in"
+    },
+    {
+        "scheme_id": "SCH004",
+        "scheme_name": "Pradhan Mantri Krishi Sinchayee Yojana - Per Drop More Crop",
+        "short_code": "PMKSY-PDMC",
+        "eligible_categories": [ "marginal", "small", "general" ],
+        "additional_priority_groups": [],
+        "all_crops_eligible": true,
+        "applicable_crops": [],
+        "benefit_type": "subsidy",
+        "annual_benefit_inr": null,
+        "financial_assistance_inr": null,
+        "total_assistance_inr_per_hectare": null,
+        "farmer_premium_percent": null,
+        "subsidy_slabs": {
+            "marginal": {
+                "min": 55,
+                "max": 55
+            },
+            "small": {
+                "min": 55,
+                "max": 55
+            },
+            "general": {
+                "min": 45,
+                "max": 45
+            }
+        },
+        "key_benefit_description": "Subsidy on micro-irrigation systems (drip/sprinkler): 55% for small and marginal farmers, 45% for other farmers. Several states offer additional top-up subsidies. Aims to cut water use 30-50% while improving yield per unit of water.",
+        "required_documents": [
+            "Aadhaar Card",
+            "Land ownership record OR lease/tenancy agreement meeting state's minimum lease-period rule",
+            "Bank account details",
+            "Quotation from a state-empanelled micro-irrigation vendor"
+        ],
+        "exclusion_tags": [
+            "repeat_subsidy_same_land_within_cooldown",
+            "land_unsuitable_for_micro_irrigation"
+        ],
+        "official_link": "https://pmksy.gov.in"
+    },
+    {
+        "scheme_id": "SCH005",
+        "scheme_name": "Paramparagat Krishi Vikas Yojana",
+        "short_code": "PKVY",
+        "eligible_categories": [ "marginal", "small", "general" ],
+        "additional_priority_groups": [],
+        "all_crops_eligible": true,
+        "applicable_crops": [],
+        "benefit_type": "subsidy",
+        "annual_benefit_inr": null,
+        "financial_assistance_inr": 15000,
+        "total_assistance_inr_per_hectare": 31500,
+        "farmer_premium_percent": null,
+        "subsidy_slabs": null,
+        "key_benefit_description": "Rs. 31,500/hectare over 3 years for farmers organized into organic-farming clusters (~20 ha/cluster). Rs. 15,000/ha of that is transferred directly to the farmer via DBT for organic inputs; remainder funds PGS-India certification, training, and market linkage.",
+        "required_documents": [
+            "Aadhaar Card",
+            "Land ownership record",
+            "Bank account details",
+            "Cluster/farmer-group enrollment form via State Agriculture Department"
+        ],
+        "exclusion_tags": [
+            "unwilling_to_join_cluster",
+            "north_east_state_covered_under_movcdner"
+        ],
+        "official_link": "https://pgsindia-ncof.gov.in"
+    },
+    {
+        "scheme_id": "SCH006",
+        "scheme_name": "Sub-Mission on Agricultural Mechanization",
+        "short_code": "SMAM",
+        "eligible_categories": [ "marginal", "small", "general" ],
+        "additional_priority_groups": [ "sc_st", "women", "north_east" ],
+        "all_crops_eligible": true,
+        "applicable_crops": [],
+        "benefit_type": "subsidy",
+        "annual_benefit_inr": null,
+        "financial_assistance_inr": null,
+        "total_assistance_inr_per_hectare": null,
+        "farmer_premium_percent": null,
+        "subsidy_slabs": {
+            "marginal": {
+                "min": 50,
+                "max": 80
+            },
+            "small": {
+                "min": 50,
+                "max": 80
+            },
+            "general": {
+                "min": 40,
+                "max": 50
+            }
+        },
+        "key_benefit_description": "Subsidy on agricultural machinery (tractors, power tillers, rotavators, sprayers, drones). Higher slab (50-80%) applies to small/marginal farmers AND to SC/ST, women, and North-Eastern farmers regardless of land size.",
+        "required_documents": [
+            "Aadhaar Card",
+            "Land ownership record or tenancy proof",
+            "Caste category certificate (for SC/ST higher-subsidy claim)",
+            "Bank account details",
+            "Passport-size photograph",
+            "Quotation/invoice from a registered equipment manufacturer or dealer"
+        ],
+        "exclusion_tags": [
+            "repeat_subsidy_same_equipment_within_cooldown",
+            "uncertified_machinery"
+        ],
+        "official_link": "https://agrimachinery.nic.in"
+    }
+]

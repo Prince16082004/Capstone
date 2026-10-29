@@ -1,0 +1,19 @@
+{
+  "_note": "Confidence gate calibrated on real_kaggle test rows of the deployed model. These rows are IN-SAMPLE for the threshold (same split used for training).",
+  "model_file": "model/crop_model.pkl",
+  "model_sha256": "3716179708b83ab9040ff05590e2973877e8a9ebf15f47822285d098cafb8953",
+  "dataset": "data/agrisense_crop_dataset_v2.csv",
+  "alpha": 0.1,
+  "n_cal": 440,
+  "q_hat": 0.15,
+  "confidence_threshold": 0.85,
+  "date": "2026-10-20T07:12:12Z",
+  "in_sample_stats": {
+    "_note": "Statistics on the same rows used to compute q_hat \u2014 in-sample, not held-out.",
+    "n_accepted": 398,
+    "n_abstained": 42,
+    "share_accepted": 0.904545,
+    "accuracy_accepted": 0.997487,
+    "accuracy_abstained": 0.952381
+  }
+}

@@ -1,0 +1,388 @@
+[
+  {
+    "crop_name": "rice",
+    "crop_category": "cereal",
+    "is_perennial": false,
+    "rotation_applicable": true,
+    "nitrogen_effect": "depletes",
+    "recommended_next_crops": [
+      "chickpea",
+      "lentil",
+      "blackgram",
+      "mungbean",
+      "pigeonpeas"
+    ],
+    "avoid_repeat_reason": "Continuous paddy monocropping depletes soil nitrogen and builds up rice-specific pests/diseases (e.g., stem borer, blast).",
+    "rationale": "Rice is a nitrogen-exhaustive, non-leguminous cereal. Rotating with a nitrogen-fixing legume restores soil nitrogen via Rhizobium symbiosis, improving the following cereal's yield. Rice-pulse rotation is a standard recommended practice in Indian rice-based cropping systems (ICAR).",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "maize",
+    "crop_category": "cereal",
+    "is_perennial": false,
+    "rotation_applicable": true,
+    "nitrogen_effect": "depletes",
+    "recommended_next_crops": [
+      "chickpea",
+      "pigeonpeas",
+      "mungbean",
+      "blackgram",
+      "lentil"
+    ],
+    "avoid_repeat_reason": "Continuous maize cultivation allows maize-specific pests (stem borer, fall armyworm) to build up in the soil and residue.",
+    "rationale": "Maize is a nitrogen-exhaustive cereal. Summer-legume-to-maize sequences are a well-studied ICAR cropping pattern that improves soil nitrogen status and reduces fertilizer dependency for the following maize crop.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "cotton",
+    "crop_category": "cash_crop",
+    "is_perennial": false,
+    "rotation_applicable": true,
+    "nitrogen_effect": "depletes",
+    "recommended_next_crops": [
+      "chickpea",
+      "pigeonpeas",
+      "mungbean",
+      "blackgram"
+    ],
+    "avoid_repeat_reason": "Continuous cotton cultivation causes severe bollworm (Helicoverpa) buildup and heavily depletes soil nitrogen and micronutrients.",
+    "rationale": "Cotton is an exhaustive, non-leguminous crop. Cotton-to-Bengal gram (chickpea) is a classic, widely documented Indian rotation used specifically to restore soil fertility and break the cotton pest cycle.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "jute",
+    "crop_category": "fibre_crop",
+    "is_perennial": false,
+    "rotation_applicable": true,
+    "nitrogen_effect": "depletes",
+    "recommended_next_crops": [
+      "chickpea",
+      "lentil",
+      "mungbean",
+      "blackgram",
+      "pigeonpeas"
+    ],
+    "avoid_repeat_reason": "Continuous jute cultivation depletes soil nitrogen and potassium and increases root-rot pathogen buildup.",
+    "rationale": "Jute is a nitrogen-exhaustive fibre crop, commonly grown in eastern India in sequence with pulses. Following it with a legume restores soil nitrogen ahead of the next fibre or cereal season.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "chickpea",
+    "crop_category": "pulse",
+    "is_perennial": false,
+    "rotation_applicable": true,
+    "nitrogen_effect": "fixes",
+    "recommended_next_crops": [
+      "rice",
+      "maize",
+      "cotton",
+      "jute"
+    ],
+    "avoid_repeat_reason": "Continuous chickpea cultivation builds up Fusarium wilt (a major soil-borne chickpea disease) and pod-borer (Helicoverpa) populations.",
+    "rationale": "Chickpea fixes atmospheric nitrogen via Rhizobium and is best followed by a nitrogen-demanding cereal or cash crop to make use of the residual soil nitrogen, per standard legume-cereal sequencing (ICAR).",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "kidneybeans",
+    "crop_category": "pulse",
+    "is_perennial": false,
+    "rotation_applicable": true,
+    "nitrogen_effect": "fixes",
+    "recommended_next_crops": [
+      "rice",
+      "maize"
+    ],
+    "avoid_repeat_reason": "Repeated kidney bean cultivation increases root-rot and bean common mosaic virus incidence.",
+    "rationale": "As a nitrogen-fixing legume, kidney beans (rajma) enrich the soil for a following cereal crop, consistent with the general legume-to-cereal rotation principle.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "pigeonpeas",
+    "crop_category": "pulse",
+    "is_perennial": false,
+    "rotation_applicable": true,
+    "nitrogen_effect": "fixes",
+    "recommended_next_crops": [
+      "rice",
+      "maize",
+      "cotton"
+    ],
+    "avoid_repeat_reason": "Continuous pigeon pea cultivation increases Fusarium wilt and pod-borer (Helicoverpa) buildup.",
+    "rationale": "Pigeon pea (arhar/tur) is a deep-rooted nitrogen-fixing legume commonly rotated ahead of cereals and cotton to restore soil nitrogen and break pest cycles specific to continuous cropping.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "mothbeans",
+    "crop_category": "pulse",
+    "is_perennial": false,
+    "rotation_applicable": true,
+    "nitrogen_effect": "fixes",
+    "recommended_next_crops": [
+      "rice",
+      "maize",
+      "cotton"
+    ],
+    "avoid_repeat_reason": "Continuous moth bean cultivation increases yellow mosaic virus incidence, common across Vigna-family pulses.",
+    "rationale": "As a Vigna-family nitrogen-fixing legume adapted to arid conditions, moth bean follows the same legume-to-cereal rotation logic used for other pulses.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "mungbean",
+    "crop_category": "pulse",
+    "is_perennial": false,
+    "rotation_applicable": true,
+    "nitrogen_effect": "fixes",
+    "recommended_next_crops": [
+      "rice",
+      "maize",
+      "cotton",
+      "jute"
+    ],
+    "avoid_repeat_reason": "Continuous mungbean cultivation increases yellow mosaic virus and Cercospora leaf-spot incidence.",
+    "rationale": "Mungbean (green gram) is a fast-growing nitrogen-fixing legume frequently used as a summer catch crop ahead of maize or rice to improve soil nitrogen status (ICAR summer-legume-maize studies).",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "blackgram",
+    "crop_category": "pulse",
+    "is_perennial": false,
+    "rotation_applicable": true,
+    "nitrogen_effect": "fixes",
+    "recommended_next_crops": [
+      "rice",
+      "maize",
+      "cotton",
+      "jute"
+    ],
+    "avoid_repeat_reason": "Continuous blackgram cultivation increases yellow mosaic virus and root-knot nematode incidence.",
+    "rationale": "Blackgram (urad) is a nitrogen-fixing legume commonly grown in rotation with rice in eastern and southern India, restoring soil nitrogen for the following cereal season.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "lentil",
+    "crop_category": "pulse",
+    "is_perennial": false,
+    "rotation_applicable": true,
+    "nitrogen_effect": "fixes",
+    "recommended_next_crops": [
+      "rice",
+      "maize"
+    ],
+    "avoid_repeat_reason": "Continuous lentil cultivation increases Fusarium wilt and rust incidence.",
+    "rationale": "Lentil (masoor) is a nitrogen-fixing rabi-season legume typically rotated with a cereal, consistent with standard legume-cereal sequencing to restore soil nitrogen.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "watermelon",
+    "crop_category": "cucurbit",
+    "is_perennial": false,
+    "rotation_applicable": true,
+    "nitrogen_effect": "neutral",
+    "recommended_next_crops": [
+      "chickpea",
+      "mungbean",
+      "blackgram",
+      "rice",
+      "maize"
+    ],
+    "avoid_repeat_reason": "Repeated cucurbit cultivation on the same plot builds up Fusarium wilt and fruit-fly populations specific to the cucurbit family.",
+    "rationale": "Cucurbits are prone to soil-borne wilt pathogens and fruit-fly buildup when repeatedly grown on the same land; rotating out of the cucurbit family (into legumes or cereals) is standard practice to break the disease/pest cycle.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "muskmelon",
+    "crop_category": "cucurbit",
+    "is_perennial": false,
+    "rotation_applicable": true,
+    "nitrogen_effect": "neutral",
+    "recommended_next_crops": [
+      "chickpea",
+      "mungbean",
+      "blackgram",
+      "rice",
+      "maize"
+    ],
+    "avoid_repeat_reason": "Repeated cucurbit cultivation on the same plot builds up Fusarium wilt and fruit-fly populations specific to the cucurbit family.",
+    "rationale": "Same cucurbit-family disease/pest dynamics as watermelon; rotating into a legume or cereal breaks the cycle and, if a legume is chosen, adds a nitrogen benefit.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "mango",
+    "crop_category": "fruit_perennial",
+    "is_perennial": true,
+    "rotation_applicable": false,
+    "nitrogen_effect": "not_applicable",
+    "recommended_next_crops": [],
+    "avoid_repeat_reason": null,
+    "rationale": "Mango is a multi-decade perennial tree crop. Single-season crop rotation logic does not apply. Intercropping with short-duration legumes during the tree's juvenile (non-bearing) years is a separate agronomic practice, not modeled here.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "coconut",
+    "crop_category": "plantation_perennial",
+    "is_perennial": true,
+    "rotation_applicable": false,
+    "nitrogen_effect": "not_applicable",
+    "recommended_next_crops": [],
+    "avoid_repeat_reason": null,
+    "rationale": "Coconut palms remain productive for 60+ years. Rotation logic does not apply; intercropping (e.g., with cocoa, pepper, or fodder) is a distinct practice not modeled in this rotation matrix.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "coffee",
+    "crop_category": "plantation_perennial",
+    "is_perennial": true,
+    "rotation_applicable": false,
+    "nitrogen_effect": "not_applicable",
+    "recommended_next_crops": [],
+    "avoid_repeat_reason": null,
+    "rationale": "Coffee is a multi-year perennial shrub crop grown under shade plantations. Seasonal rotation is not applicable.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "apple",
+    "crop_category": "fruit_perennial",
+    "is_perennial": true,
+    "rotation_applicable": false,
+    "nitrogen_effect": "not_applicable",
+    "recommended_next_crops": [],
+    "avoid_repeat_reason": null,
+    "rationale": "Apple is a temperate perennial fruit tree with a multi-decade orchard lifecycle. Rotation logic does not apply.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "orange",
+    "crop_category": "fruit_perennial",
+    "is_perennial": true,
+    "rotation_applicable": false,
+    "nitrogen_effect": "not_applicable",
+    "recommended_next_crops": [],
+    "avoid_repeat_reason": null,
+    "rationale": "Orange (citrus) is a perennial orchard tree crop with a multi-decade lifecycle. Rotation logic does not apply.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "grapes",
+    "crop_category": "fruit_perennial",
+    "is_perennial": true,
+    "rotation_applicable": false,
+    "nitrogen_effect": "not_applicable",
+    "recommended_next_crops": [],
+    "avoid_repeat_reason": null,
+    "rationale": "Grapevines are perennial and remain productive for 20-25+ years on a trellis system. Rotation logic does not apply.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "banana",
+    "crop_category": "plantation_perennial",
+    "is_perennial": true,
+    "rotation_applicable": false,
+    "nitrogen_effect": "not_applicable",
+    "recommended_next_crops": [],
+    "avoid_repeat_reason": null,
+    "rationale": "Banana is a long-duration (12+ month) perennial-type crop typically maintained across multiple ratoon cycles on the same plot. Classic single-season rotation logic does not apply; replanting decisions depend on ratoon management practice, not modeled here.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "papaya",
+    "crop_category": "fruit_perennial",
+    "is_perennial": true,
+    "rotation_applicable": false,
+    "nitrogen_effect": "not_applicable",
+    "recommended_next_crops": [],
+    "avoid_repeat_reason": null,
+    "rationale": "Papaya is typically maintained as a 2-3 year orchard crop rather than a single-season crop. Classic annual rotation logic does not apply.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "pomegranate",
+    "crop_category": "fruit_perennial",
+    "is_perennial": true,
+    "rotation_applicable": false,
+    "nitrogen_effect": "not_applicable",
+    "recommended_next_crops": [],
+    "avoid_repeat_reason": null,
+    "rationale": "Pomegranate is a perennial orchard shrub with a multi-decade productive lifespan. Rotation logic does not apply.",
+    "evidence": "icar_literature_general"
+  },
+  {
+    "crop_name": "soybean",
+    "crop_category": "pulse",
+    "is_perennial": false,
+    "rotation_applicable": true,
+    "nitrogen_effect": "fixes",
+    "recommended_next_crops": [
+      "rice",
+      "maize",
+      "wheat"
+    ],
+    "avoid_repeat_reason": "Continuous soybean cultivation increases the risk of root rot and other soil-borne diseases.",
+    "rationale": "Soybean is a nitrogen-fixing legume, highly recommended after cereals and avoids repeat due to root rot.",
+    "evidence": "expert_assumed_unverified"
+  },
+  {
+    "crop_name": "bajra",
+    "crop_category": "millet",
+    "is_perennial": false,
+    "rotation_applicable": true,
+    "nitrogen_effect": "depletes",
+    "recommended_next_crops": [
+      "chickpea",
+      "mungbean",
+      "blackgram",
+      "lentil",
+      "pigeonpeas"
+    ],
+    "avoid_repeat_reason": "Continuous cultivation depletes soil nitrogen.",
+    "rationale": "Bajra (pearl millet) is a nitrogen-exhaustive cereal/millet, typically recommended after pulses like chickpea or mungbean.",
+    "evidence": "expert_assumed_unverified"
+  },
+  {
+    "crop_name": "jowar",
+    "crop_category": "cereal",
+    "is_perennial": false,
+    "rotation_applicable": true,
+    "nitrogen_effect": "depletes",
+    "recommended_next_crops": [
+      "chickpea",
+      "mungbean",
+      "blackgram",
+      "lentil",
+      "pigeonpeas"
+    ],
+    "avoid_repeat_reason": "Continuous jowar cultivation depletes soil nitrogen.",
+    "rationale": "Jowar (sorghum) is a nitrogen-exhaustive cereal, commonly recommended after pulses to utilize fixed nitrogen.",
+    "evidence": "expert_assumed_unverified"
+  },
+  {
+    "crop_name": "groundnut",
+    "crop_category": "oilseed_legume",
+    "is_perennial": false,
+    "rotation_applicable": true,
+    "nitrogen_effect": "fixes",
+    "recommended_next_crops": [
+      "rice",
+      "maize",
+      "cotton"
+    ],
+    "avoid_repeat_reason": "Continuous groundnut cultivation increases incidence of soil-borne diseases and pests.",
+    "rationale": "Groundnut is an oilseed legume that fixes nitrogen, making it ideal before nitrogen-demanding cereals or cotton.",
+    "evidence": "expert_assumed_unverified"
+  },
+  {
+    "crop_name": "sugarcane",
+    "crop_category": "cash_crop",
+    "is_perennial": true,
+    "rotation_applicable": false,
+    "nitrogen_effect": "depletes",
+    "recommended_next_crops": [
+      "chickpea",
+      "mungbean",
+      "blackgram"
+    ],
+    "avoid_repeat_reason": "Continuous sugarcane monocropping severely depletes soil nutrients and increases pest buildup.",
+    "rationale": "Sugarcane is a long-duration cash crop that depletes nitrogen. It is recommended to rotate with pulses or fallow to restore soil health.",
+    "note": "Multi-year ratoon crop.",
+    "evidence": "expert_assumed_unverified"
+  }
+]

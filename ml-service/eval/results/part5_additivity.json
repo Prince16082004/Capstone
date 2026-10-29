@@ -1,0 +1,198 @@
+{
+  "_meta": {
+    "script": "eval/part5_shap_analysis.py",
+    "note": "base_value + sum(SHAP) must equal predict_proba[pred_class]; checks SHAP additivity property",
+    "n_rows_checked": 20,
+    "random_seed": 42,
+    "library_versions": {
+      "python": "3.13.7",
+      "sklearn": "1.5.2",
+      "shap": "0.46.0",
+      "numpy": "2.1.3"
+    }
+  },
+  "max_abs_error": 0.0,
+  "mean_abs_error": 0.0,
+  "per_row": [
+    {
+      "test_idx": 326,
+      "pred_class": "mothbeans",
+      "pred_proba": 0.79,
+      "base_value": 0.045447,
+      "shap_sum": 0.744553,
+      "base_plus_shap": 0.79,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 312,
+      "pred_class": "maize",
+      "pred_proba": 0.92,
+      "base_value": 0.045212,
+      "shap_sum": 0.874788,
+      "base_plus_shap": 0.92,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 86,
+      "pred_class": "pomegranate",
+      "pred_proba": 1.0,
+      "base_value": 0.046,
+      "shap_sum": 0.954,
+      "base_plus_shap": 1.0,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 421,
+      "pred_class": "muskmelon",
+      "pred_proba": 0.99,
+      "base_value": 0.04578,
+      "shap_sum": 0.94422,
+      "base_plus_shap": 0.99,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 368,
+      "pred_class": "lentil",
+      "pred_proba": 0.95,
+      "base_value": 0.045205,
+      "shap_sum": 0.904795,
+      "base_plus_shap": 0.95,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 330,
+      "pred_class": "blackgram",
+      "pred_proba": 0.88,
+      "base_value": 0.045803,
+      "shap_sum": 0.834197,
+      "base_plus_shap": 0.88,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 56,
+      "pred_class": "pigeonpeas",
+      "pred_proba": 0.8,
+      "base_value": 0.045364,
+      "shap_sum": 0.754636,
+      "base_plus_shap": 0.8,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 37,
+      "pred_class": "kidneybeans",
+      "pred_proba": 0.96,
+      "base_value": 0.045008,
+      "shap_sum": 0.914992,
+      "base_plus_shap": 0.96,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 276,
+      "pred_class": "mothbeans",
+      "pred_proba": 0.84,
+      "base_value": 0.045447,
+      "shap_sum": 0.794553,
+      "base_plus_shap": 0.84,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 224,
+      "pred_class": "rice",
+      "pred_proba": 0.84,
+      "base_value": 0.045644,
+      "shap_sum": 0.794356,
+      "base_plus_shap": 0.84,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 184,
+      "pred_class": "cotton",
+      "pred_proba": 0.97,
+      "base_value": 0.045424,
+      "shap_sum": 0.924576,
+      "base_plus_shap": 0.97,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 36,
+      "pred_class": "banana",
+      "pred_proba": 1.0,
+      "base_value": 0.045326,
+      "shap_sum": 0.954674,
+      "base_plus_shap": 1.0,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 198,
+      "pred_class": "papaya",
+      "pred_proba": 0.99,
+      "base_value": 0.045015,
+      "shap_sum": 0.944985,
+      "base_plus_shap": 0.99,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 365,
+      "pred_class": "blackgram",
+      "pred_proba": 0.95,
+      "base_value": 0.045803,
+      "shap_sum": 0.904197,
+      "base_plus_shap": 0.95,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 40,
+      "pred_class": "mothbeans",
+      "pred_proba": 0.55,
+      "base_value": 0.045447,
+      "shap_sum": 0.504553,
+      "base_plus_shap": 0.55,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 318,
+      "pred_class": "apple",
+      "pred_proba": 0.99,
+      "base_value": 0.044341,
+      "shap_sum": 0.945659,
+      "base_plus_shap": 0.99,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 342,
+      "pred_class": "lentil",
+      "pred_proba": 0.99,
+      "base_value": 0.045205,
+      "shap_sum": 0.944795,
+      "base_plus_shap": 0.99,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 186,
+      "pred_class": "banana",
+      "pred_proba": 0.97,
+      "base_value": 0.045326,
+      "shap_sum": 0.924674,
+      "base_plus_shap": 0.97,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 298,
+      "pred_class": "pigeonpeas",
+      "pred_proba": 0.96,
+      "base_value": 0.045364,
+      "shap_sum": 0.914636,
+      "base_plus_shap": 0.96,
+      "abs_error": 0.0
+    },
+    {
+      "test_idx": 226,
+      "pred_class": "coconut",
+      "pred_proba": 1.0,
+      "base_value": 0.045212,
+      "shap_sum": 0.954788,
+      "base_plus_shap": 1.0,
+      "abs_error": 0.0
+    }
+  ]
+}

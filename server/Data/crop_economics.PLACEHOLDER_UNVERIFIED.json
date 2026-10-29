@@ -1,0 +1,226 @@
+[
+  {
+    "crop": "rice",
+    "season": "kharif",
+    "msp_inr_per_quintal": 2183,
+    "yield_qtl_per_ha": 25.0,
+    "cost_a2_fl_inr_per_ha": 35083,
+    "cost_c2_inr_per_ha": 49380
+  },
+  {
+    "crop": "wheat",
+    "season": "rabi",
+    "msp_inr_per_quintal": 2275,
+    "yield_qtl_per_ha": 34.9,
+    "cost_a2_fl_inr_per_ha": 31960,
+    "cost_c2_inr_per_ha": 52616
+  },
+  {
+    "crop": "maize",
+    "season": "kharif",
+    "msp_inr_per_quintal": 2090,
+    "yield_qtl_per_ha": 30.3,
+    "cost_a2_fl_inr_per_ha": 21726,
+    "cost_c2_inr_per_ha": 29441
+  },
+  {
+    "crop": "chickpea",
+    "season": "rabi",
+    "msp_inr_per_quintal": 5440,
+    "yield_qtl_per_ha": 10.9,
+    "cost_a2_fl_inr_per_ha": 30780,
+    "cost_c2_inr_per_ha": 44374
+  },
+  {
+    "crop": "lentil",
+    "season": "rabi",
+    "msp_inr_per_quintal": 6425,
+    "yield_qtl_per_ha": 9.5,
+    "cost_a2_fl_inr_per_ha": 30978,
+    "cost_c2_inr_per_ha": 40836
+  },
+  {
+    "crop": "pigeonpeas",
+    "season": "kharif",
+    "msp_inr_per_quintal": 7000,
+    "yield_qtl_per_ha": 8.0,
+    "cost_a2_fl_inr_per_ha": 34432,
+    "cost_c2_inr_per_ha": 49652
+  },
+  {
+    "crop": "mungbean",
+    "season": "kharif",
+    "msp_inr_per_quintal": 8558,
+    "yield_qtl_per_ha": 5.0,
+    "cost_a2_fl_inr_per_ha": 28830,
+    "cost_c2_inr_per_ha": 41394
+  },
+  {
+    "crop": "blackgram",
+    "season": "kharif",
+    "msp_inr_per_quintal": 7400,
+    "yield_qtl_per_ha": 5.0,
+    "cost_a2_fl_inr_per_ha": 26918,
+    "cost_c2_inr_per_ha": 36974
+  },
+  {
+    "crop": "kidneybeans",
+    "season": "kharif",
+    "msp_inr_per_quintal": null,
+    "yield_qtl_per_ha": null,
+    "cost_a2_fl_inr_per_ha": null,
+    "cost_c2_inr_per_ha": null
+  },
+  {
+    "crop": "mothbeans",
+    "season": "kharif",
+    "msp_inr_per_quintal": 7275,
+    "yield_qtl_per_ha": 3.5,
+    "cost_a2_fl_inr_per_ha": null,
+    "cost_c2_inr_per_ha": null
+  },
+  {
+    "crop": "cotton",
+    "season": "kharif",
+    "msp_inr_per_quintal": 6620,
+    "yield_qtl_per_ha": 4.7,
+    "cost_a2_fl_inr_per_ha": 52590,
+    "cost_c2_inr_per_ha": 77112
+  },
+  {
+    "crop": "jute",
+    "season": "kharif",
+    "msp_inr_per_quintal": 5050,
+    "yield_qtl_per_ha": 24.8,
+    "cost_a2_fl_inr_per_ha": null,
+    "cost_c2_inr_per_ha": null
+  },
+  {
+    "crop": "sugarcane",
+    "season": "kharif",
+    "msp_inr_per_quintal": 315,
+    "yield_qtl_per_ha": 700.0,
+    "cost_a2_fl_inr_per_ha": 135000,
+    "cost_c2_inr_per_ha": 190000
+  },
+  {
+    "crop": "coffee",
+    "season": "kharif",
+    "msp_inr_per_quintal": null,
+    "yield_qtl_per_ha": null,
+    "cost_a2_fl_inr_per_ha": null,
+    "cost_c2_inr_per_ha": null
+  },
+  {
+    "crop": "banana",
+    "season": "kharif",
+    "msp_inr_per_quintal": null,
+    "yield_qtl_per_ha": null,
+    "cost_a2_fl_inr_per_ha": null,
+    "cost_c2_inr_per_ha": null
+  },
+  {
+    "crop": "mango",
+    "season": "kharif",
+    "msp_inr_per_quintal": null,
+    "yield_qtl_per_ha": null,
+    "cost_a2_fl_inr_per_ha": null,
+    "cost_c2_inr_per_ha": null
+  },
+  {
+    "crop": "grapes",
+    "season": "rabi",
+    "msp_inr_per_quintal": null,
+    "yield_qtl_per_ha": null,
+    "cost_a2_fl_inr_per_ha": null,
+    "cost_c2_inr_per_ha": null
+  },
+  {
+    "crop": "apple",
+    "season": "rabi",
+    "msp_inr_per_quintal": null,
+    "yield_qtl_per_ha": null,
+    "cost_a2_fl_inr_per_ha": null,
+    "cost_c2_inr_per_ha": null
+  },
+  {
+    "crop": "orange",
+    "season": "rabi",
+    "msp_inr_per_quintal": null,
+    "yield_qtl_per_ha": null,
+    "cost_a2_fl_inr_per_ha": null,
+    "cost_c2_inr_per_ha": null
+  },
+  {
+    "crop": "papaya",
+    "season": "kharif",
+    "msp_inr_per_quintal": null,
+    "yield_qtl_per_ha": null,
+    "cost_a2_fl_inr_per_ha": null,
+    "cost_c2_inr_per_ha": null
+  },
+  {
+    "crop": "watermelon",
+    "season": "kharif",
+    "msp_inr_per_quintal": null,
+    "yield_qtl_per_ha": null,
+    "cost_a2_fl_inr_per_ha": null,
+    "cost_c2_inr_per_ha": null
+  },
+  {
+    "crop": "muskmelon",
+    "season": "kharif",
+    "msp_inr_per_quintal": null,
+    "yield_qtl_per_ha": null,
+    "cost_a2_fl_inr_per_ha": null,
+    "cost_c2_inr_per_ha": null
+  },
+  {
+    "crop": "pomegranate",
+    "season": "kharif",
+    "msp_inr_per_quintal": null,
+    "yield_qtl_per_ha": null,
+    "cost_a2_fl_inr_per_ha": null,
+    "cost_c2_inr_per_ha": null
+  },
+  {
+    "crop": "coconut",
+    "season": "kharif",
+    "msp_inr_per_quintal": null,
+    "yield_qtl_per_ha": null,
+    "cost_a2_fl_inr_per_ha": null,
+    "cost_c2_inr_per_ha": null
+  },
+  {
+    "crop": "soybean",
+    "season": "kharif",
+    "msp_inr_per_quintal": 4600,
+    "yield_qtl_per_ha": 12.0,
+    "cost_a2_fl_inr_per_ha": null,
+    "cost_c2_inr_per_ha": null
+  },
+  {
+    "crop": "groundnut",
+    "season": "kharif",
+    "msp_inr_per_quintal": 6377,
+    "yield_qtl_per_ha": 15.0,
+    "cost_a2_fl_inr_per_ha": 51230,
+    "cost_c2_inr_per_ha": 72700
+  },
+  {
+    "crop": "bajra",
+    "season": "kharif",
+    "msp_inr_per_quintal": 2500,
+    "yield_qtl_per_ha": 13.0,
+    "cost_a2_fl_inr_per_ha": 17325,
+    "cost_c2_inr_per_ha": 23725
+  },
+  {
+    "crop": "jowar",
+    "season": "kharif",
+    "msp_inr_per_quintal": 3180,
+    "yield_qtl_per_ha": 9.9,
+    "cost_a2_fl_inr_per_ha": 22450,
+    "cost_c2_inr_per_ha": 32020
+  }
+]

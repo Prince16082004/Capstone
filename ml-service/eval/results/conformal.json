@@ -1,0 +1,39 @@
+{
+  "_meta": {
+    "script": "eval/part3_conformal.py",
+    "method": "Split-conformal LAC (1 - p(true class))",
+    "quantile_formula": "ceil((n_cal+1)*(1-alpha)) / n_cal  [Angelopoulos 2023]",
+    "calibration_set": "Part 2 calibration split (20% of real_kaggle data, clean)",
+    "test_set": "Part 2 test split (20% of real_kaggle data, clean)",
+    "implementation": "plain numpy \u2014 no external conformal library",
+    "library_versions": {
+      "python": "3.13.7",
+      "sklearn": "1.5.2",
+      "numpy": "2.1.3"
+    }
+  },
+  "results": {
+    "0.1": {
+      "alpha": 0.1,
+      "nominal_coverage": 0.9,
+      "quantile_index": 397,
+      "threshold": 0.18,
+      "empirical_coverage": 0.902273,
+      "mean_set_size": 0.902273,
+      "frac_singletons": 0.902273,
+      "n_test": 440,
+      "n_cal": 440
+    },
+    "0.05": {
+      "alpha": 0.05,
+      "nominal_coverage": 0.95,
+      "quantile_index": 419,
+      "threshold": 0.26,
+      "empirical_coverage": 0.954545,
+      "mean_set_size": 0.954545,
+      "frac_singletons": 0.954545,
+      "n_test": 440,
+      "n_cal": 440
+    }
+  }
+}
