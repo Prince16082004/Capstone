@@ -4,6 +4,7 @@ import Footer from "../components/Footer.jsx";
 import ChatbotWidget from "../components/ChatbotWidget.jsx";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import { useFarmerProfile } from "../context/FarmerProfileContext.jsx";
+import { apiFetch } from "../lib/api.js";
 import { MapPin, Search, Landmark, ShieldCheck, HelpCircle, ArrowRight, Loader2, CheckSquare } from "lucide-react";
 import SchemeMatcher from "../components/SchemeMatcher.jsx";
 import L from "leaflet";
@@ -100,7 +101,7 @@ export default function GovernmentSchemes() {
     setLoading(true);
     setStatusMessage("");
     try {
-      const res = await fetch(`/api/government?lat=${latitude}&lon=${longitude}`);
+      const res = await apiFetch(`/api/government?lat=${latitude}&lon=${longitude}`);
       const data = await res.json();
       if (data.success) {
         setSchemes(data.data);

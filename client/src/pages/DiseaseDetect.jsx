@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
 import ChatbotWidget from "../components/ChatbotWidget.jsx";
 import { useLanguage } from "../context/LanguageContext.jsx";
+import { apiFetch } from "../lib/api.js";
 import { Bug, Upload, CheckCircle2, ShieldCheck, AlertCircle, Sparkles, RefreshCw, FlaskConical } from "lucide-react";
 
 export default function DiseaseDetect() {
@@ -38,7 +39,7 @@ export default function DiseaseDetect() {
     formData.append("crop", crop);
 
     try {
-      const res = await fetch("/api/disease/detect", {
+      const res = await apiFetch("/api/disease/detect", {
         method: "POST",
         body: formData,
       });

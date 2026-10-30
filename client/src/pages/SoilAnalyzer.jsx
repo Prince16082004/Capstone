@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
 import ChatbotWidget from "../components/ChatbotWidget.jsx";
 import { useLanguage } from "../context/LanguageContext.jsx";
+import { apiFetch } from "../lib/api.js";
 import { FileUp, FileText, FlaskConical, MapPin, CheckCircle, RefreshCw, AlertTriangle, ArrowRight, Loader2, Landmark } from "lucide-react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
@@ -77,7 +78,7 @@ export default function SoilAnalyzer() {
   const fetchLabs = async (lat, lon) => {
     setLoadingLabs(true);
     try {
-      const res = await fetch(`/api/soil/labs?lat=${lat}&lon=${lon}`);
+      const res = await apiFetch(`/api/soil/labs?lat=${lat}&lon=${lon}`);
       const result = await res.json();
       if (result.success) {
         setLabs(result.data);
@@ -176,7 +177,7 @@ export default function SoilAnalyzer() {
     formData.append("report", file);
 
     try {
-      const res = await fetch("/api/soil/analyze", {
+      const res = await apiFetch("/api/soil/analyze", {
         method: "POST",
         body: formData
       });
@@ -205,7 +206,7 @@ export default function SoilAnalyzer() {
     e.preventDefault();
     setCalculating(true);
     try {
-      const res = await fetch("/api/soil/advisory", {
+      const res = await apiFetch("/api/soil/advisory", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(soilForm)

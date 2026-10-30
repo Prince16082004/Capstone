@@ -1,8 +1,9 @@
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
+const jwtSecret = require("../config/jwt");
 
 const generateToken = (id) => {
-  return jwt.sign({ id }, process.env.JWT_SECRET || "agrisense_secret", {
+  return jwt.sign({ id }, jwtSecret, {
     expiresIn: "30d",
   });
 };

@@ -5,6 +5,7 @@ import ChatbotWidget from "../components/ChatbotWidget.jsx";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/LanguageContext.jsx";
 import { useFarmerProfile } from "../context/FarmerProfileContext.jsx";
+import { apiFetch } from "../lib/api.js";
 import {
   CloudSun, Sprout, Bug, Droplets, FlaskConical, LineChart, TrendingUp,
   ShieldCheck, AlertTriangle, ArrowRight, CheckCircle2, RefreshCw, Landmark, FileText,
@@ -134,7 +135,7 @@ export default function Dashboard() {
     }
 
     // Also fetch the full weather data from server for charts/forecast (existing flow)
-    fetch("/api/weather?city=Bengaluru")
+    apiFetch("/api/weather?city=Bengaluru")
       .then((res) => res.json())
       .then((data) => {
         if (data.success) setWeather(data.data);

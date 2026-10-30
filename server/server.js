@@ -7,15 +7,24 @@ const connectDB = require("./config/db");
 // Load env vars
 dotenv.config();
 
+require("./config/jwt");
+
 // Connect to MongoDB
 connectDB();
 
 const app = express();
 
 // --- Middleware ---
+const allowedOrigins = (process.env.CLIENT_URL || "http://localhost:5173")
+  .split(",")
+  .map((origin) => origin.trim())
+  .filter(Boolean);
+
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
+    origin(origin, callback) {
+      return callback(null, !origin || allowedOrigins.includes(origin));
+    },
     credentials: true,
   })
 );

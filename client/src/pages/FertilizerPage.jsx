@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
 import ChatbotWidget from "../components/ChatbotWidget.jsx";
 import { useLanguage } from "../context/LanguageContext.jsx";
+import { apiFetch } from "../lib/api.js";
 import { FlaskConical, ArrowRight, CheckCircle2 } from "lucide-react";
 
 export default function FertilizerPage() {
@@ -25,7 +26,7 @@ export default function FertilizerPage() {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch("/api/fertilizer/calculate", {
+      const res = await apiFetch("/api/fertilizer/calculate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),

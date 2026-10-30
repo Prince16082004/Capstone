@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
 import ChatbotWidget from "../components/ChatbotWidget.jsx";
 import { useLanguage } from "../context/LanguageContext.jsx";
+import { apiFetch } from "../lib/api.js";
 import { Droplets, ArrowRight, CheckCircle2, Clock } from "lucide-react";
 
 export default function IrrigationPage() {
@@ -60,7 +61,7 @@ export default function IrrigationPage() {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch("/api/irrigation/calculate", {
+      const res = await apiFetch("/api/irrigation/calculate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),

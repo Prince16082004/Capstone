@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useAuth } from "../context/AuthContext.jsx";
 import { useLanguage } from "../context/LanguageContext.jsx";
+import { apiFetch } from "../lib/api.js";
 import { Lock, Mail, User as UserIcon, ArrowRight, ShieldAlert, Sprout } from "lucide-react";
 import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
@@ -34,7 +35,7 @@ export default function ProtectedRoute({ children }) {
     const endpoint = isRegister ? "/api/auth/register" : "/api/auth/login";
 
     try {
-      const res = await fetch(endpoint, {
+      const res = await apiFetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),

@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
 import ChatbotWidget from "../components/ChatbotWidget.jsx";
 import { useLanguage } from "../context/LanguageContext.jsx";
+import { apiFetch } from "../lib/api.js";
 import { CloudSun, Search, Wind, Droplets, Sun, AlertTriangle, CheckCircle2, Thermometer, MapPin, Compass } from "lucide-react";
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 
@@ -17,7 +18,7 @@ export default function WeatherPage() {
   const fetchWeather = (cityName) => {
     setLoading(true);
     setError(null);
-    fetch(`/api/weather?city=${encodeURIComponent(cityName)}`)
+    apiFetch(`/api/weather?city=${encodeURIComponent(cityName)}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {

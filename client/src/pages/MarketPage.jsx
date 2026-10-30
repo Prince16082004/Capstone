@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
 import ChatbotWidget from "../components/ChatbotWidget.jsx";
 import { useLanguage } from "../context/LanguageContext.jsx";
+import { apiFetch } from "../lib/api.js";
 import { LineChart, Search, TrendingUp, TrendingDown, Minus } from "lucide-react";
 import { LineChart as RechartsLine, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 
@@ -21,7 +22,7 @@ export default function MarketPage() {
     if (stateFilter) params.append("state", stateFilter);
     if (params.toString()) url += `?${params.toString()}`;
 
-    fetch(url)
+    apiFetch(url)
       .then((res) => res.json())
       .then((resData) => {
         if (resData.success) setData(resData);

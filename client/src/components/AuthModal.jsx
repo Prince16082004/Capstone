@@ -2,6 +2,7 @@ import { useState } from "react";
 import { X, Lock, Mail, User as UserIcon, ArrowRight, CheckCircle2 } from "lucide-react";
 import { useAuth } from "../context/AuthContext.jsx";
 import { useLanguage } from "../context/LanguageContext.jsx";
+import { apiFetch } from "../lib/api.js";
 
 export default function AuthModal({ isOpen, onClose }) {
   const { login } = useAuth();
@@ -23,7 +24,7 @@ export default function AuthModal({ isOpen, onClose }) {
     const endpoint = isRegister ? "/api/auth/register" : "/api/auth/login";
 
     try {
-      const res = await fetch(endpoint, {
+      const res = await apiFetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),

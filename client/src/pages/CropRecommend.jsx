@@ -6,6 +6,7 @@ import { useLanguage } from "../context/LanguageContext.jsx";
 import { useFarmerProfile } from "../context/FarmerProfileContext.jsx";
 import { Sprout, ArrowRight, Sparkles, CheckCircle2, Leaf, AlertTriangle, CloudSun, Thermometer, Droplets, TrendingUp, TrendingDown, RotateCcw, FlaskConical, Info } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, ReferenceLine } from "recharts";
+import { apiFetch } from "../lib/api.js";
 
 export default function CropRecommend() {
   const { t } = useLanguage();
@@ -32,7 +33,7 @@ export default function CropRecommend() {
       setWeatherLoading(true);
       const city = profile.district || "Pune"; // default fallback
       try {
-        const res = await fetch(`/api/weather?city=${encodeURIComponent(city)}`);
+        const res = await apiFetch(`/api/weather?city=${encodeURIComponent(city)}`);
         const data = await res.json();
         if (data.success && data.data?.current) {
           setWeatherData({
@@ -70,7 +71,7 @@ export default function CropRecommend() {
     };
 
     try {
-      const res = await fetch("/api/crop/ml-recommend", {
+      const res = await apiFetch("/api/crop/ml-recommend", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),

@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Bot, Send, X, Sparkles } from "lucide-react";
+import { apiFetch } from "../lib/api.js";
 
 export default function ChatbotWidget() {
   const [open, setOpen] = useState(false);
@@ -24,7 +25,7 @@ export default function ChatbotWidget() {
     setLoading(true);
 
     try {
-      const res = await fetch("/api/chat", {
+      const res = await apiFetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userText }),

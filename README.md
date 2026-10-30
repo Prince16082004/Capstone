@@ -108,6 +108,38 @@ OPENWEATHER_API_KEY=replace_with_your_openweathermap_key
 
 > Do **not** commit `.env` — it is git-ignored.
 
+### Production deployment (Vercel + Render)
+
+For Vercel, set the following environment variable and redeploy:
+
+| Variable | Value |
+|---|---|
+| `VITE_API_BASE_URL` | The public Express backend origin, for example `https://your-api.onrender.com` (no trailing slash and no `/api` suffix) |
+| `VITE_OPENWEATHER_API_KEY` | Optional; used for the dashboard's direct OpenWeather request |
+
+For the Render Express service, configure:
+
+| Variable | Value |
+|---|---|
+| `MONGO_URI` | MongoDB connection string |
+| `JWT_SECRET` | A strong, unique secret; do not use the example value |
+| `NODE_ENV` | `production` |
+| `CLIENT_URL` | Exact Vercel site origin, such as `https://your-site.vercel.app`; comma-separate exact origins if production and preview origins are both needed |
+| `OPENWEATHER_API_KEY` | Optional; used by the backend weather endpoint |
+| `ML_SERVICE_URL` | Public FastAPI service origin, required for deployed crop recommendations; omit `/predict` |
+
+Render supplies `PORT` automatically. Do not add a wildcard CORS origin. The
+backend accepts only the exact origins listed in `CLIENT_URL`; local development
+continues to allow `http://localhost:5173` by default. Keep API routes prefixed
+with `/api`; the frontend helper adds the configured backend origin without
+changing those route paths. JWT authentication continues to use the existing
+Bearer token stored in browser local storage.
+
+Deploy the FastAPI ML service separately if crop recommendations are required.
+Set the Render Express service's `ML_SERVICE_URL` to that service's public
+origin. The Vercel frontend should only call the Express service, never FastAPI
+directly.
+
 ---
 
 ## API Endpoints (key routes)

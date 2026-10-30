@@ -12,13 +12,13 @@ const rotationMatrix                   = require('../Data/crop_rotation_matrix.j
  *
  * Thin proxy: validates that all 7 required fields are numeric,
  * then forwards the body verbatim to the Python FastAPI service at
- * ML_SERVICE_URL (default: http://127.0.0.1:8000) and returns its
+ * ML_SERVICE_URL (default: http://127.0.0.1:8001) and returns its
  * response unchanged.
  *
  * The client NEVER calls the FastAPI service directly.
  */
 
-const ML_SERVICE_URL = 'http://127.0.0.1:8001';
+const ML_SERVICE_URL = process.env.ML_SERVICE_URL || 'http://127.0.0.1:8001';
 const REQUIRED_FIELDS = ['N', 'P', 'K', 'temperature', 'humidity', 'ph', 'rainfall'];
 
 // ── Load crop economics once at module initialisation ─────────────────────────

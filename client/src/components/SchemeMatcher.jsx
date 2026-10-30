@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Loader2, ArrowRight, CheckCircle2 } from "lucide-react";
 import { useFarmerProfile } from "../context/FarmerProfileContext.jsx";
+import { apiFetch } from "../lib/api.js";
 
 export default function SchemeMatcher() {
   const { profile, updateProfile } = useFarmerProfile();
@@ -46,7 +47,7 @@ export default function SchemeMatcher() {
     setMatching(true);
     setError("");
     try {
-      const res = await fetch("/api/schemes/match", {
+      const res = await apiFetch("/api/schemes/match", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
